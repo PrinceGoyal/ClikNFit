@@ -308,10 +308,10 @@ public class BookingInfo extends AppCompatActivity implements ApiResponse, Payme
                     showhours = 00;
                     items.add("12");
                 } else {
-                    if(showhours == 00)
-                    items.add("0" + (showhours + 2));
+                    if (showhours == 00)
+                        items.add("0" + (showhours + 2));
                     else
-                    items.add("" + (showhours + 2));
+                        items.add("" + (showhours + 2));
 
                 }
             }
@@ -330,12 +330,12 @@ public class BookingInfo extends AppCompatActivity implements ApiResponse, Payme
             pm.setVisibility(View.GONE);
             if (selectedfromhour < 10) {
                 selectedtohour = showhours + 1;
-                if(selectedtohour==10)
+                if (selectedtohour == 10)
                     items.add("" + (showhours + 1));
-                    else
-                items.add("0" + (showhours + 1));
+                else
+                    items.add("0" + (showhours + 1));
                 if (selectedtohour < 8)
-                items.add("0" + (showhours + 2));
+                    items.add("0" + (showhours + 2));
                 else
                     items.add("" + (showhours + 2));
             } else {
@@ -347,22 +347,22 @@ public class BookingInfo extends AppCompatActivity implements ApiResponse, Payme
                     showhours = 01;
                     selectedtohour = showhours;
                     items.add("0" + showhours);
-                } else if(showhours>12){
-                    selectedtohour =  01;
+                } else if (showhours > 12) {
+                    selectedtohour = 01;
                     items.add("01");
                     selectedtoformat = "PM";
                     pm.setVisibility(View.VISIBLE);
                     am.setVisibility(View.GONE);
                     pm.setTextColor(getResources().getColor(R.color.WHITE));
-                }else{
-                    if (showhours==11){
-                    selectedtohour =  00;
-                    items.add("12");
+                } else {
+                    if (showhours == 11) {
+                        selectedtohour = 00;
+                        items.add("12");
                         selectedtoformat = "PM";
                         pm.setVisibility(View.VISIBLE);
                         am.setVisibility(View.GONE);
                         pm.setTextColor(getResources().getColor(R.color.WHITE));
-                    }else{
+                    } else {
                         selectedtohour = (showhours + 1);
                         items.add("" + (showhours + 1));
                     }
@@ -452,10 +452,10 @@ public class BookingInfo extends AppCompatActivity implements ApiResponse, Payme
                 if (selectedtohour == 0) {
                     selectedtodate = tommorowdate;
                 } else {
-                    if(selectedtohour==1 && selectedtoformat.equals("AM"))
+                    if (selectedtohour == 1 && selectedtoformat.equals("AM"))
                         selectedtodate = tommorowdate;
                     else
-                    selectedtodate = currentdate;
+                        selectedtodate = currentdate;
                 }
                 if (selectedfromformat.equals("AM")) {
                     if (selectedfromdate.equals(currentdate)) {
@@ -686,13 +686,13 @@ public class BookingInfo extends AppCompatActivity implements ApiResponse, Payme
                         pm.setVisibility(View.VISIBLE);
 
                         if (selectedfromhour == 12) {
-                            datetime.setText(tommorowdate + " 12" + ":" + selectedfrommin + " " + selectedfromformat);
                             selectedfromdate = tommorowdate;
                             pm.setTextColor(getResources().getColor(R.color.TEXTFIELD_PLACEHOLDER_TEXT_COLOR_LIGHT));
                             am.setTextColor(getResources().getColor(R.color.WHITE));
                             selectedfromformat = "AM";
                             am.setVisibility(View.VISIBLE);
                             pm.setVisibility(View.GONE);
+                            datetime.setText(tommorowdate + " 12" + ":" + selectedfrommin + " " + selectedfromformat);
 
                         } else {
                             datetime.setText(currentdate + " " + selectedfromhour + ":" + selectedfrommin + " " + selectedfromformat);
@@ -724,7 +724,7 @@ public class BookingInfo extends AppCompatActivity implements ApiResponse, Payme
                             pm.setVisibility(View.VISIBLE);
                             pm.setTextColor(getResources().getColor(R.color.TEXTFIELD_PLACEHOLDER_TEXT_COLOR_LIGHT));
                             datetime.setText(currentdate + " 12" + ":" + selectedfrommin + " " + selectedfromformat);
-                        }else
+                        } else
                             datetime.setText(currentdate + " " + selectedfromhour + ":" + selectedfrommin + " " + selectedfromformat);
                     }
                 }
@@ -835,7 +835,7 @@ public class BookingInfo extends AppCompatActivity implements ApiResponse, Payme
             public void onClick(View v) {
                 if (selectedfromhour == 12) {
                     txt.setText("12" + ":" + selectedfrommin + " " + selectedfromformat);
-                } else if(selectedfromhour<10)
+                } else if (selectedfromhour < 10)
                     txt.setText("0" + selectedfromhour + ":" + selectedfrommin + " " + selectedfromformat);
                 else
                     txt.setText("" + selectedfromhour + ":" + selectedfrommin + " " + selectedfromformat);
@@ -977,14 +977,20 @@ public class BookingInfo extends AppCompatActivity implements ApiResponse, Payme
     }
 
     private void requestBooking() {
-        if(selectedfromformat.equals("PM")){
-            if(selectedfromhour<12)
-            selectedfromhour= selectedfromhour+12;
+        if (selectedfromformat.equals("PM")) {
+            if (selectedfromhour < 12)
+                selectedfromhour = selectedfromhour + 12;
         }
 
-        if(selectedtoformat.equals("PM")){
-            if(selectedtohour<12)
-            selectedtohour= selectedtohour+12;
+        if (selectedtoformat.equals("PM")) {
+            if (selectedtohour < 12)
+                selectedtohour = selectedtohour + 12;
+        }
+        if (selectedfromformat.equals("AM") && selectedfromhour == 12) {
+            selectedfromhour = 0;
+        }
+        if (selectedtoformat.equals("AM") && selectedtohour == 12) {
+            selectedtohour = 0;
         }
 
         CommonAsyncTask ca = new CommonAsyncTask(this);
