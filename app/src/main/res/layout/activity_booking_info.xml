@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BACKGROUND_COLOR">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+
+        <com.cliknfit.customviews.RegulerText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="TRAINER DETAILS"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/et_sz"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+            >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <com.makeramen.roundedimageview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/img_profile_pic"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/placeholder"
+                    app:riv_border_color="#fff"
+                    app:riv_border_width="2dip"
+                    app:riv_corner_radius="5dp"
+                    app:riv_mutate_background="true"
+                    />
+
+            </FrameLayout>
+
+            <com.cliknfit.customviews.RegulerText
+                android:id="@+id/trainer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="Trainer Name"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_sz"/>
+
+        </LinearLayout>
+
+
+        <com.cliknfit.customviews.RegulerText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="SESSION DETAILS"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/et_sz"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+
+            <com.cliknfit.customviews.LightText
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Start Time"
+                android:textColor="@color/colorAccent"/>
+
+            <com.cliknfit.customviews.LightText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:text="|  "
+                android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                android:textSize="@dimen/btn_txt_sz"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical"
+                >
+
+                <EditText
+                    android:id="@+id/from"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:drawableRight="@drawable/starttime"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="select"
+                    android:textColor="@color/COLOR_LIGHT"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="@dimen/btn_txt_sz"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/colorAccent"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+
+            <com.cliknfit.customviews.LightText
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="End Time"
+                android:textColor="@color/colorAccent"/>
+
+            <com.cliknfit.customviews.LightText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:text="|  "
+                android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                android:textSize="@dimen/btn_txt_sz"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                >
+
+                <EditText
+                    android:id="@+id/to"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:drawableRight="@drawable/endtime"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="select"
+                    android:textColor="@color/COLOR_LIGHT"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="@dimen/btn_txt_sz"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/colorAccent"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+
+            <com.cliknfit.customviews.LightText
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="No. of People"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/btn_txt_sz"/>
+
+            <com.cliknfit.customviews.LightText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:text="|  "
+                android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                android:textSize="@dimen/btn_txt_sz"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                >
+
+                <EditText
+                    android:id="@+id/no_of_people"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:drawableRight="@drawable/noofpeople"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="1"
+                    android:textColor="@color/COLOR_LIGHT"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="@dimen/btn_txt_sz"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/colorAccent"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_height="wrap_content">
+
+        <com.cliknfit.customviews.RegulerText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+
+            android:text="LOCATION"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/et_sz"/>
+
+            <com.cliknfit.customviews.RegulerText
+                android:id="@+id/selectmap"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/BUTTON_PINK_COLOR"
+                android:layout_marginRight="10dp"
+                android:text="Select From Map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        <RadioGroup
+            android:id="@+id/locationradiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/gym"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:buttonTint="@color/colorAccent"
+                android:text="Trainer Gym"
+                android:textColor="@color/colorAccent"/>
+
+            <RadioButton
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:buttonTint="@color/colorAccent"
+                android:text="Home/other"
+                android:textColor="@color/colorAccent"/>
+
+
+        </RadioGroup>
+
+
+        <com.cliknfit.customviews.LightText
+            android:id="@+id/Trainer_gymaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/BACKGROUND_COLOR"
+            android:minHeight="50dp"
+            android:textColor="@color/COLOR_LIGHT"
+            android:textSize="@dimen/et_sz"/>
+
+
+        <com.cliknfit.customviews.LightText
+            android:id="@+id/save"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_sz"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/selectorpinkbutton"
+            android:gravity="center"
+            android:text="Submit Request"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_txt_sz"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

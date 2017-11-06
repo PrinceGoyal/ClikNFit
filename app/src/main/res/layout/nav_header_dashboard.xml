@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@color/WHITE"
+
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/TransparentBACKGROUND_COLOR20"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:src="@drawable/drawerlogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="180dp"
+        android:background="@color/BLACK"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/ic_circleblack"
+        android:padding="3dp">
+
+        <com.cliknfit.util.RoundedImageView
+            android:id="@+id/img_profile_pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/placeholder"/>
+    </RelativeLayout>
+
+    <com.cliknfit.customviews.SemiBoldText
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/BACKGROUND_COLOR"
+        android:textSize="@dimen/et_sz"/>
+
+
+    <!--
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                >
+
+                <com.cliknfit.util.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/img_profile_pic"
+                    android:src="@drawable/user_image_temp"
+                    android:scaleType="fitCenter"
+                    app:riv_corner_radius="5dp"
+                    app:riv_border_width="2dip"
+                    android:layout_height="80dp"
+                    android:layout_width="80dp"
+                    app:riv_border_color="@color/WHITE"
+                    app:riv_mutate_background="true"
+                    />
+
+            </RelativeLayout>
+
+            <com.cliknfit.customviews.SemiBoldText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:text="Client Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                android:textSize="@dimen/btn_txt_sz"/>
+
+
+        </LinearLayout>
+    -->
+</RelativeLayout>

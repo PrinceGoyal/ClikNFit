@@ -1,0 +1,254 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+              >
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/session_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <RelativeLayout
+        android:id="@+id/breakLayout"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <com.github.lzyzsd.circleprogress.DonutProgress
+            android:id="@+id/donut_progress_break"
+            custom:donut_background_color="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            custom:donut_finished_stroke_width="7dp"
+            custom:donut_unfinished_stroke_width="7dp"
+            custom:donut_finished_color="#f7dd13"
+            custom:donut_progress="100"
+            custom:donut_text_color="@color/colorPrimaryDark"
+            custom:donut_unfinished_color="@color/BACKGROUND_COLORLIGHT"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.cliknfit.customviews.LightText
+                android:id="@+id/breaktime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Started!"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_szSmall"/>
+
+            <com.cliknfit.customviews.LightText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Break"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_szSmallest"
+                custom:textAllCaps="true"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sideLayout"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <RelativeLayout
+            android:id="@+id/warmUpLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.github.lzyzsd.circleprogress.DonutProgress
+                android:id="@+id/donut_progress_warmUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                custom:donut_finished_stroke_width="7dp"
+                custom:donut_background_color="@color/colorPrimary"
+                custom:donut_unfinished_stroke_width="7dp"
+                custom:donut_finished_color="#8ff7e9"
+                custom:donut_inner_bottom_text_color="@color/BUTTON_PINK_COLOR"
+                custom:donut_progress="100"
+                custom:donut_text_color="@color/colorPrimaryDark"
+                custom:donut_unfinished_color="@color/BACKGROUND_COLORLIGHT"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.cliknfit.customviews.LightText
+                    android:id="@+id/wakeUptimeleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not Started!"
+                    android:textColor="@color/WHITE"
+                    android:textSize="@dimen/et_szSmall"/>
+
+                <com.cliknfit.customviews.LightText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="warmup"
+                    android:textColor="@color/WHITE"
+                    android:textSize="@dimen/et_szSmallest"
+                    custom:textAllCaps="true"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/coolLayout"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            >
+
+            <com.github.lzyzsd.circleprogress.DonutProgress
+                android:id="@+id/donut_progress_cool"
+
+                custom:donut_background_color="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                custom:donut_finished_color="#479c02"
+                custom:donut_finished_stroke_width="7dp"
+                custom:donut_unfinished_stroke_width="7dp"
+                custom:donut_inner_bottom_text_color="@color/BUTTON_PINK_COLOR"
+                custom:donut_progress="100"
+                custom:donut_text_color="@color/colorPrimaryDark"
+                custom:donut_unfinished_color="@color/BACKGROUND_COLORLIGHT"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.cliknfit.customviews.LightText
+                    android:id="@+id/cooltimeright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not Started!"
+                    android:textColor="@color/WHITE"
+                    android:textSize="@dimen/et_szSmall"/>
+
+                <com.cliknfit.customviews.LightText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="cool"
+                    android:textColor="@color/WHITE"
+                    android:textSize="@dimen/et_szSmallest"
+                    custom:textAllCaps="true"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vw"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/sideLayout"/>
+
+    <RelativeLayout
+        android:id="@+id/center_circle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/vw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <com.github.lzyzsd.circleprogress.DonutProgress
+            android:id="@+id/donut_progresscenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            custom:donut_finished_color="@color/BUTTON_PINK_COLOR"
+            custom:donut_inner_bottom_text_color="@color/BUTTON_PINK_COLOR"
+            custom:donut_progress="100"
+            custom:donut_background_color="@color/colorPrimary"
+            custom:donut_text_color="@color/colorPrimaryDark"
+            custom:donut_unfinished_color="@color/BACKGROUND_COLORLIGHT"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.cliknfit.customviews.RegulerText
+                android:id="@+id/timecenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/txt_szxLarge"/>
+
+            <com.cliknfit.customviews.LightText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Workout"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_sz"
+                custom:textAllCaps="true"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <com.cliknfit.customviews.RegulerText
+        android:id="@+id/emergency_stop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_sz"
+        android:layout_below="@+id/center_circle"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/btn_sz"
+        android:layout_marginRight="@dimen/btn_sz"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selectorpinkbutton"
+        android:gravity="center"
+        android:onClick="goToOtp"
+        android:visibility="gone"
+        android:text="End Session"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/btn_txt_sz"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:visibility="gone"
+        android:layout_height="20dp"
+        android:layout_above="@+id/emergency_stop"
+        android:src="@drawable/sound_mute"/>
+
+
+</RelativeLayout>

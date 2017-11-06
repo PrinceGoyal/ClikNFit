@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.cliknfit.activity.Dashboard"
+    tools:showIn="@layout/app_bar_dashboard">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <!--   <android.support.v7.widget.CardView
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:card_view="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/card_view"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"
+           android:layout_marginTop="20dp"
+           android:background="#fff"
+           android:elevation="2dp"
+           android:minHeight="48dp"
+           card_view:cardCornerRadius="3dp"
+           card_view:cardUseCompatPadding="true">-->
+    <LinearLayout
+        android:id="@+id/searchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_white"
+        android:minHeight="48dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:drawableLeft="@drawable/center_pin"
+            android:drawablePadding="20dp"
+            android:editable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:hint="Select address ..."
+            android:padding="10dp"
+            android:textColor="#333"
+            android:textSize="14sp"/>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"/>
+    <!-- </android.support.v7.widget.CardView>-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLay">
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/cntr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/userloc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cntr"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cc"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/bottomLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/homeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/home_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/home_colored"/>
+
+            <com.cliknfit.customviews.RegulerText
+                android:id="@+id/home_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="@color/BUTTON_PINK_COLOR"
+                android:textSize="@dimen/et_szSmall"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/eventLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_events"/>
+
+            <com.cliknfit.customviews.RegulerText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Events"
+
+                android:textSize="@dimen/et_szSmall"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/trainerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_top_trainer"/>
+
+            <com.cliknfit.customviews.RegulerText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Trainers"
+                android:textSize="@dimen/et_szSmall"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/newsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/news_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+
+                android:src="@drawable/news_feed_color"/>
+
+                <ImageView
+                    android:id="@+id/checknoti"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_circle"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"/>
+
+            </FrameLayout>
+            <com.cliknfit.customviews.RegulerText
+                android:id="@+id/news_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Newsfeed"
+                android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                android:textSize="@dimen/et_szSmall"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rewardsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_rewards"/>
+
+            <com.cliknfit.customviews.RegulerText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rewards"
+                android:textSize="@dimen/et_szSmall"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/currentloc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ic_loccircle"
+        android:elevation="4dp"
+        android:padding="7dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_gps"/>
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/trainerInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/TransparentBACKGROUNDWhite_COLOR20"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/WHITE"
+            android:clickable="true"
+            android:focusable="true"
+            >
+
+            <com.cliknfit.customviews.SemiBoldText
+                android:id="@+id/trainer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="Trainer Name"
+                android:textColor="@color/BACKGROUND_COLOR"
+                android:textSize="@dimen/et_sz"/>
+
+            <LinearLayout
+                android:id="@+id/ll_speciality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trainer_name"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <com.cliknfit.customviews.RegulerText
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Speciality : "
+                    android:textColor="@color/BUTTON_PINK_COLOR"
+                    android:textSize="@dimen/et_szSmall"/>
+
+                <com.cliknfit.customviews.LightText
+                    android:id="@+id/speciality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Weight Loss"
+                    android:textColor="@color/BACKGROUND_COLOR"
+                    android:textSize="@dimen/et_szSmall"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_motto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_speciality"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <com.cliknfit.customviews.RegulerText
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Motto : "
+                    android:textColor="@color/BUTTON_PINK_COLOR"
+                    android:textSize="@dimen/et_szSmall"/>
+
+                <com.cliknfit.customviews.LightText
+                    android:id="@+id/motto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Make a lifestyle"
+                    android:textColor="@color/BACKGROUND_COLOR"
+                    android:textSize="@dimen/et_szSmall"/>
+            </LinearLayout>
+
+            <com.cliknfit.customviews.RegulerText
+                android:id="@+id/viewPro"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/btn_sz"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="56dp"
+                android:background="@drawable/round_pink"
+                android:gravity="center"
+                android:text="View Profile"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/et_szSmall"
+                />
+
+            <com.cliknfit.customviews.RegulerText
+                android:id="@+id/book_now"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/btn_sz"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/round_green"
+                android:gravity="center"
+                android:text="Book Now"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/et_szSmall"
+                />
+
+            <LinearLayout
+                android:id="@+id/ratinglayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/border_pink"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <com.cliknfit.customviews.SemiBoldText
+                    android:id="@+id/tv_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9.8"
+                    android:textColor="@color/BUTTON_PINK_COLOR"
+                    android:textSize="@dimen/et_szSmall"/>
+
+                <com.cliknfit.customviews.LightText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="rating"
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR_LIGHT"
+                    android:textSize="@dimen/et_szSmall"/>
+
+            </LinearLayout>
+
+            <com.cliknfit.customviews.RegulerText
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ratinglayout"
+                android:layout_marginRight="20dp"
+                android:text="$70/hour"
+                android:textColor="@color/BUTTON_PINK_COLOR"
+                android:textSize="@dimen/et_szSmall"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="165dp"
+            android:background="@drawable/ic_circlewhite"
+            android:padding="3dp">
+
+            <com.cliknfit.util.RoundedImageView
+                android:id="@+id/trainer_profile_pic"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:src="@drawable/user_image_temp"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/searchFullLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/TransparentBACKGROUND_COLOR20"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:weightSum="5"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2.2"
+                android:src="@drawable/ic_search"/>
+
+            <EditText
+                android:id="@+id/et_search2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:background="@drawable/round_dark"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColor="@color/WHITE"/>
+
+            <com.cliknfit.customviews.RegulerText
+                android:id="@+id/searchDone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Done"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/newsfeedlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLay"
+        android:visibility="gone"
+        android:background="@color/BACKGROUND_COLORLIGHT">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/BACKGROUND_COLORLIGHT"
+            android:orientation="vertical"
+            tools:context="com.cliknfit.fragment.NewsFeeds">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ad_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/TransparentBACKGROUND_COLOR20"
+                    android:scaleType="centerCrop"/>
+
+
+                <com.cliknfit.customviews.RegulerText
+                    android:id="@+id/ad_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Advertisement here"
+                    android:textColor="@color/WHITE"
+                    android:textSize="@dimen/et_sz"/>
+
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mRecyclerViewNewsFeed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/BACKGROUND_COLORLIGHT"
+                android:padding="2dp">
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

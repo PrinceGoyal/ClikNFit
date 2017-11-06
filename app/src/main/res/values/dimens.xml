@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_txt_sz">13sp</dimen>
+    <dimen name="et_sz">14sp</dimen>
+    <dimen name="et_szmedium">16sp</dimen>
+    <dimen name="et_szSmall">11sp</dimen>
+    <dimen name="et_szSmallest">9sp</dimen>
+    <dimen name="txt_szLarge">30sp</dimen>
+    <dimen name="btn_sz">37dp</dimen>
+    <dimen name="btn_width">200dp</dimen>
+    <dimen name="btn_szsmall">30dp</dimen>
+    <dimen name="txt_szxLarge">33sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">260dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="image_border_curvature">5dp</dimen>
+</resources>

@@ -1,0 +1,68 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+    <view
+            class="eu.janmuller.android.simplecropimage.CropImageView"
+            android:id="@+id/image"
+            android:background="#55000000"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_x="0dip"
+            android:layout_y="0dip"
+            />
+
+    <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:gravity="center"
+            android:paddingRight="10dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+
+        <ImageView
+                android:layout_alignParentLeft="true"
+                android:id="@+id/discard"
+                android:layout_width="80dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_cancel"
+                />
+
+        <ImageButton
+                android:id="@+id/rotateLeft"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@id/discard"
+                style="@style/CropButton"
+                android:visibility="gone"
+                android:src="@drawable/ic_rotate_left"
+                />
+
+        <ImageButton
+                android:id="@+id/rotateRight"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@id/rotateLeft"
+                style="@style/CropButton"
+                android:visibility="gone"
+                android:src="@drawable/ic_rotate_right"
+                />
+        <ImageView
+                android:id="@+id/save"
+                android:layout_marginLeft="10dp"
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@id/rotateRight"
+                android:src="@drawable/ic_checked"
+                android:text="@string/save"
+                />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,637 @@
+<RelativeLayout
+    android:id="@+id/activity_profile"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<ScrollView
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BACKGROUND_COLORLIGHT"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8">
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/img_profile_pic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/placeholder"
+                    app:riv_border_color="#fff"
+                    app:riv_border_width="2dip"
+                    app:riv_corner_radius="5dp"
+                    app:riv_mutate_background="true"
+                    />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:orientation="vertical"
+                >
+
+                <com.cliknfit.customviews.SemiBoldText
+                    android:id="@+id/tv_trainerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trainer Name"
+                    android:textColor="@color/WHITE"
+                    android:textSize="@dimen/et_szmedium"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <com.cliknfit.customviews.LightText
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Speciality "
+                        android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                        android:textSize="@dimen/btn_txt_sz"/>
+
+                    <com.cliknfit.customviews.LightText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:text="|  "
+                        android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                        android:textSize="@dimen/btn_txt_sz"
+                        />
+
+
+                    <com.cliknfit.customviews.LightText
+                        android:id="@+id/tv_speciality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/COLOR_LIGHT"
+                        android:textSize="@dimen/btn_txt_sz"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <com.cliknfit.customviews.LightText
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="City   "
+                        android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                        android:textSize="@dimen/btn_txt_sz"/>
+
+                    <com.cliknfit.customviews.LightText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:text="|  "
+                        android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                        android:textSize="@dimen/btn_txt_sz"
+                        />
+
+                    <com.cliknfit.customviews.LightText
+                        android:id="@+id/tv_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/COLOR_LIGHT"
+                        android:textSize="@dimen/btn_txt_sz"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <com.cliknfit.customviews.LightText
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Motto   "
+                        android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                        android:textSize="@dimen/btn_txt_sz"/>
+
+                    <com.cliknfit.customviews.LightText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:text="|  "
+                        android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                        android:textSize="@dimen/btn_txt_sz"
+                        />
+
+                    <com.cliknfit.customviews.LightText
+                        android:id="@+id/tv_motto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/COLOR_LIGHT"
+                        android:textSize="@dimen/btn_txt_sz"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_heart"/>
+
+                    <com.cliknfit.customviews.LightText
+                        android:id="@+id/lightText3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:text="favorite "
+                        android:textColor="@color/WHITE"
+                        android:textSize="@dimen/btn_txt_sz"/>
+
+                    <com.cliknfit.customviews.SemiBoldText
+                        android:id="@+id/tv_fav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="22"
+                        android:visibility="gone"
+                        android:textColor="@color/WHITE"
+                        android:textSize="@dimen/btn_txt_sz"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_review_icon"/>
+
+
+                    <com.cliknfit.customviews.RegulerText
+                        android:id="@+id/tv_review"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="top"
+                        android:text="Booked X Times"
+                        android:textColor="@color/COLOR_LIGHT"
+                        android:textSize="@dimen/btn_txt_sz"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="2.1"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/lightborder"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.cliknfit.customviews.SemiBoldText
+                        android:id="@+id/tv_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9.8"
+                        android:textColor="@color/COLOR_LIGHT"
+                        android:textSize="@dimen/et_szSmall"
+                        android:textStyle="bold"/>
+
+                    <com.cliknfit.customviews.LightText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="rating"
+                        android:textColor="@color/COLOR_LIGHT"
+                        android:textSize="@dimen/et_szSmall"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/lightborder"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <com.cliknfit.customviews.SemiBoldText
+                        android:id="@+id/tv_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="@color/COLOR_LIGHT"
+                        android:textSize="@dimen/et_szSmall"
+                        android:textStyle="bold"/>
+
+                    <com.cliknfit.customviews.LightText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="points"
+                        android:textColor="@color/COLOR_LIGHT"
+                        android:textSize="@dimen/et_szSmall"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.cliknfit.customviews.LightText
+            android:id="@+id/tv_requesttrainer"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_sz"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/selectorpinkbutton"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Request Trainer"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_txt_sz"
+            android:textStyle="bold"/>
+
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/wrapper"
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            >
+
+            <com.cliknfit.util.CustomVideoPlayer
+                android:id="@+id/videoview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/videoplaceholder"
+                android:src="@drawable/videoprogress"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/imgLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/capture1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/addimage_icon"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="5dp"
+                    app:riv_mutate_background="true"
+                    android:visibility="invisible"
+                    />
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/capture2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/addimage_icon"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="5dp"
+                    app:riv_mutate_background="true"
+                    android:visibility="invisible"
+                    />
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/capture3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/addimage_icon"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="5dp"
+                    app:riv_mutate_background="true"
+                    android:visibility="invisible"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/imgLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3">
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/capture4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/addimage_icon"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="5dp"
+                    app:riv_mutate_background="true"
+                    android:visibility="invisible"
+                    />
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/capture5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/addimage_icon"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="5dp"
+                    app:riv_mutate_background="true"
+                    android:visibility="invisible"
+                    />
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/capture6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/addimage_icon"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="5dp"
+                    app:riv_mutate_background="true"
+                    android:visibility="invisible"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/imgLayout3"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/capture7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/addimage_icon"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="5dp"
+                    app:riv_mutate_background="true"
+                    />
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/capture8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/addimage_icon"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="5dp"
+                    android:visibility="invisible"
+                    app:riv_mutate_background="true"
+                    />
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/capture9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/addimage_icon"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="5dp"
+                    app:riv_mutate_background="true"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/BACKGROUND_COLOR">
+
+            <com.cliknfit.customviews.RegulerText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="-10dp"
+                android:text="PROFILE INFORMATION"
+                android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR_LIGHT"/>
+
+        </RelativeLayout>
+
+        <com.cliknfit.customviews.SemiBoldText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_right_arrow"
+
+            android:drawablePadding="10dp"
+            android:text="About Me"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/et_sz"
+            android:textStyle="bold"/>
+
+        <com.cliknfit.customviews.LightText
+            android:id="@+id/tv_aboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:textColor="@color/COLOR_LIGHT"
+            android:textSize="@dimen/et_szSmall"/>
+
+        <com.cliknfit.customviews.SemiBoldText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:drawableLeft="@drawable/ic_right_arrow"
+            android:drawablePadding="10dp"
+            android:text="Workout Programs"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/et_sz"
+            android:textStyle="bold"/>
+
+        <com.cunoraz.tagview.TagView
+            xmlns:tagview="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tag_group_workoutProgram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            tagview:lineMargin="5dp"
+            tagview:tagMargin="5dp"
+            tagview:textPaddingBottom="5dp"
+            tagview:textPaddingLeft="8dp"
+            tagview:textPaddingRight="8dp"
+            tagview:textPaddingTop="5dp"/>
+
+
+        <com.cliknfit.customviews.SemiBoldText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:drawableLeft="@drawable/ic_right_arrow"
+            android:drawablePadding="10dp"
+            android:text="Workout Location"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/et_sz"
+            android:textStyle="bold"/>
+
+        <com.cunoraz.tagview.TagView
+            xmlns:tagview="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tag_group_workoutLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            tagview:lineMargin="5dp"
+            tagview:tagMargin="5dp"
+            tagview:textPaddingBottom="5dp"
+            tagview:textPaddingLeft="8dp"
+            tagview:textPaddingRight="8dp"
+            tagview:textPaddingTop="5dp"/>
+
+
+        <com.cliknfit.customviews.SemiBoldText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:drawableLeft="@drawable/ic_right_arrow"
+            android:drawablePadding="10dp"
+            android:text="Additional Trainer Info"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/et_sz"
+            android:textStyle="bold"/>
+
+        <com.cliknfit.customviews.LightText
+            android:id="@+id/tv_aditionalInfo"
+            android:layout_width="match_parent"
+            android:minHeight="100dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:textColor="@color/COLOR_LIGHT"
+            android:textSize="@dimen/et_szSmall"/>
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+    <ImageView
+        android:id="@+id/fullimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BACKGROUND_COLOR"
+        android:visibility="gone" />
+    </RelativeLayout>

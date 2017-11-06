@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/BACKGROUND_COLORLIGHT"
+              android:layout_height="wrap_content">
+    <com.cliknfit.customviews.LightText
+        android:id="@+id/txttime"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:text="PM"
+        android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR_LIGHT"
+        android:textSize="@dimen/et_szmedium"/>
+
+</LinearLayout>

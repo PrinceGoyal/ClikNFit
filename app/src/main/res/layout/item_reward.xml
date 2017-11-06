@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/card_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/BUTTON_PINK_COLOR"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BUTTON_PINK_COLOR"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/rImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <com.cliknfit.customviews.LightText
+            android:id="@+id/tv_title"
+            android:layout_margin="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="10% of Product"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/et_szSmall"/>
+
+
+        <com.cliknfit.customviews.RegulerText
+            android:id="@+id/tv_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/COLOR_LIGHT"
+            android:gravity="center"
+
+            android:padding="5dp"
+            android:text="100 points"
+            android:textColor="@color/BUTTON_PINK_COLOR"
+            android:textSize="@dimen/et_szSmall"
+
+            />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

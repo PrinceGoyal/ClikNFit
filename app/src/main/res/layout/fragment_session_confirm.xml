@@ -1,0 +1,426 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BACKGROUND_COLORLIGHT"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+
+            <com.cliknfit.customviews.SemiBoldText
+                android:id="@+id/tv_sessionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="SESSION TITLE"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_sz"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                >
+
+                <com.cliknfit.customviews.RegulerText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Date day"
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"/>
+                <com.cliknfit.customviews.LightText
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"
+                    android:layout_height="match_parent"
+                    android:text="|  "
+                    />
+                <com.cliknfit.customviews.SemiBoldText
+                    android:id="@+id/tv_dateday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight Loss"
+                    android:textColor="@color/COLOR_LIGHT"
+                    android:textSize="@dimen/et_szSmall"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                >
+
+                <com.cliknfit.customviews.RegulerText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Time "
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"/>
+                <com.cliknfit.customviews.LightText
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"
+                    android:layout_height="match_parent"
+                    android:text="|  "
+                    />
+                <com.cliknfit.customviews.SemiBoldText
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Los Angelss"
+                    android:textColor="@color/COLOR_LIGHT"
+                    android:textSize="@dimen/et_szSmall"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                >
+
+                <com.cliknfit.customviews.RegulerText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"/>
+                <com.cliknfit.customviews.LightText
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"
+                    android:layout_height="match_parent"
+                    android:text="|  "
+                    />
+                <com.cliknfit.customviews.SemiBoldText
+                    android:id="@+id/tv_motto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make it a lifestyle"
+                    android:textColor="@color/COLOR_LIGHT"
+                    android:textSize="@dimen/et_szSmall"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                >
+
+                <com.cliknfit.customviews.RegulerText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="# of people "
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"/>
+                <com.cliknfit.customviews.LightText
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"
+                    android:layout_height="match_parent"
+                    android:text="|  "
+                    />
+                <com.cliknfit.customviews.SemiBoldText
+                    android:id="@+id/tv_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make it a lifestyle"
+                    android:textColor="@color/COLOR_LIGHT"
+                    android:textSize="@dimen/et_szSmall"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                >
+
+                <com.cliknfit.customviews.RegulerText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hours"
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"/>
+                <com.cliknfit.customviews.LightText
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"
+                    android:layout_height="match_parent"
+                    android:text="|  "
+                    />
+                <com.cliknfit.customviews.SemiBoldText
+                    android:id="@+id/tv_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make it a lifestyle"
+                    android:textColor="@color/COLOR_LIGHT"
+                    android:textSize="@dimen/et_szSmall"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                >
+
+                <com.cliknfit.customviews.RegulerText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Payment "
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"/>
+                <com.cliknfit.customviews.LightText
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"
+                    android:layout_height="match_parent"
+                    android:text="|  "
+                    />
+                <com.cliknfit.customviews.SemiBoldText
+                    android:id="@+id/tv_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make it a lifestyle"
+                    android:textColor="@color/COLOR_LIGHT"
+                    android:textSize="@dimen/et_szSmall"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                >
+
+                <com.cliknfit.customviews.RegulerText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Points Earned "
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"/>
+                <com.cliknfit.customviews.LightText
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"
+                    android:layout_height="match_parent"
+                    android:text="|  "
+                    />
+                <com.cliknfit.customviews.SemiBoldText
+                    android:id="@+id/tv_pointsearned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make it a lifestyle"
+                    android:textColor="@color/COLOR_LIGHT"
+                    android:textSize="@dimen/et_szSmall"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <com.cliknfit.customviews.SemiBoldText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:text="LOCATION ADDRESS"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_sz"
+                android:textStyle="bold"/>
+
+
+            <com.cliknfit.customviews.RegulerText
+                android:id="@+id/tv_location_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trainers Gym "
+                android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                android:textSize="@dimen/btn_txt_sz"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+
+                android:orientation="vertical"
+                >
+
+                <com.cliknfit.customviews.RegulerText
+                    android:id="@+id/invitePeople"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_sz"
+                    android:background="@drawable/selectorpinkborderbutton"
+                    android:gravity="center"
+                    android:onClick="invitePeopleClick"
+                    android:text="Invite People"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/btn_txt_sz"
+                    android:textStyle="bold"/>
+
+
+                <com.cliknfit.customviews.RegulerText
+                    android:id="@+id/confirmSession"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_sz"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1.4"
+                    android:background="@drawable/selectorpinkbutton"
+                    android:gravity="center"
+                    android:onClick="confirmSessionClick"
+                    android:text="Confirm Session"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/btn_txt_sz"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/BACKGROUND_COLOR">
+
+            <com.cliknfit.customviews.RegulerText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="-10dp"
+                android:text="WORKOUT INFORMATION"
+                android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR_LIGHT"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+            >
+            <com.cliknfit.customviews.SemiBoldText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Workout Program"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_sz"
+                android:textStyle="bold"/>
+
+            <com.cliknfit.customviews.SemiBoldText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Workout Description"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_sz"
+                android:textStyle="bold"/>
+
+
+            <com.cliknfit.customviews.RegulerText
+                android:id="@+id/tv_woroutDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I am going to wedding in 3 weeks. "
+                android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                android:textSize="@dimen/btn_txt_sz"/>
+
+            <com.cliknfit.customviews.SemiBoldText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Trainer"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_sz"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.cliknfit.util.RoundedImageView
+                    android:id="@+id/img_profile_pic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/imageborder"/>
+
+                <com.cliknfit.customviews.SemiBoldText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="Trainer Name"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/et_sz"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+
+            <com.cliknfit.customviews.RegulerText
+                android:id="@+id/contactclient"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="180dp"
+                android:layout_height="35dp"
+                android:background="@drawable/selectorpinkborderbutton"
+                android:gravity="center"
+                android:onClick="invitePeopleClick"
+                android:text="Contact Trainer"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/btn_txt_sz"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

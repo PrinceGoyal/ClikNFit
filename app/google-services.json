@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "723704790228",
+    "firebase_url": "https://clinfitandroid.firebaseio.com",
+    "project_id": "clinfitandroid",
+    "storage_bucket": "clinfitandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723704790228:android:d62b6e1cd4214624",
+        "android_client_info": {
+          "package_name": "com.cliknfit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723704790228-c5n19cjckqfc9bi1a75upit69salh4qa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApxXihsFzucOn7dYF7gMj0u7YJ3fprBkA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

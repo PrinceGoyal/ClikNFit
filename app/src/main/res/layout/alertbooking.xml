@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/round_white"
+              android:orientation="vertical">
+
+    <com.cliknfit.customviews.LightText
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="SUMMARY"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/WHITE"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <com.cliknfit.customviews.RegulerText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Start Time"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:textSize="@dimen/et_sz"/>
+
+            <com.cliknfit.customviews.RegulerText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="End Time"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:textSize="@dimen/et_sz"/>
+
+            <com.cliknfit.customviews.RegulerText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="No. of People"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:textSize="@dimen/et_sz"/>
+
+            <com.cliknfit.customviews.RegulerText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textColor="@color/colorAccent"
+                android:text="Total Charges"
+                android:gravity="center"
+                android:textSize="@dimen/et_sz"/>
+
+            <com.cliknfit.customviews.RegulerText
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_height="40dp"
+                android:text="Hours"
+                android:gravity="center"
+                android:textSize="@dimen/et_sz"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Start Time"
+                android:layout_gravity="center"
+               android:background="@color/colorAccent"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:text="Start Time"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Start Time"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Start Time"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Start Time"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <com.cliknfit.customviews.RegulerText
+                android:id="@+id/start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Start Time"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:textSize="@dimen/et_sz"/>
+
+            <com.cliknfit.customviews.RegulerText
+                android:id="@+id/end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="End Time"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:textSize="@dimen/et_sz"/>
+
+            <com.cliknfit.customviews.RegulerText
+                android:id="@+id/no_people"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="No. of People"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:textSize="@dimen/et_sz"/>
+
+            <com.cliknfit.customviews.RegulerText
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textColor="@color/colorPrimary"
+                android:text="Total Charges"
+                android:gravity="center"
+                android:textSize="@dimen/et_sz"/>
+
+            <com.cliknfit.customviews.RegulerText
+                android:id="@+id/hours"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="40dp"
+                android:text="Hours"
+                android:gravity="center"
+                android:textSize="@dimen/et_sz"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/BUTTON_PINK_COLOR"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/WHITE"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1px"
+            android:layout_weight="1"
+            android:background="@color/Green"
+            android:gravity="center"
+            android:text="Confirm"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/WHITE"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.cliknfit">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false"/>
+
+    <application
+        android:name=".util.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/launcher"
+        android:label="@string/appname"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCVJa4q5G5vJ1HxIHHpTK19Rms_bkwwIxM"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <!--
+            <provider android:authorities="com.facebook.app.FacebookContentProvider1234"
+                  android:name="com.facebook.FacebookContentProvider"
+                  android:exported="true" />
+        -->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:theme"/>
+        <activity
+            android:name=".activity.Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name=".activity.Register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name=".activity.Video"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name=".activity.ForgotPass"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name=".activity.OtpVerification"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name=".activity.PrivacyPolicy"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".activity.PaymentMethods"
+            android:label="ADD CARD"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="eu.janmuller.android.simplecropimage.CropImage"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name=".fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.QNA"
+            android:label="Q &amp; A"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activity.ChatDetail"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.SocialLogin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation"/>
+        <activity android:name="io.card.payment.DataEntryActivity"/>
+        <activity
+            android:name=".activity.UpdateProfile"
+            android:label="EDIT PROFILE"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.MyAccount"
+            android:label="MY ACCOUNT"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.CommentsSession"
+            android:label="COMMENTS"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.BookingInfo"
+            android:label="BOOKING INFORMATION"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.MyAddress"
+            android:label="My Address"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.AddAddress"
+            android:label="ADD ADDRESS"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.SessionDetails"
+            android:label="SESSION DETAILS"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.TrainerProfile"
+            android:label="TRAINER PROFILE"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.SessionTimer"
+            android:label="SESSION TIMER"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.AboutChangeContact"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.EndSession"
+            android:label="Session Total"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.TrainerList"
+            android:label="TRAINER SEARCH RESULT"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.ZoomImage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".activity.NewsFeedDetail"
+            android:label="NEWSFEED"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.SelectAddress"
+            android:label="SELECT ADDRESS"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activity.Testing">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cliknfit.activity.SelectAddress">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+
+
+
+
+    <com.cliknfit.customviews.RegulerText
+        android:id="@+id/setaddress"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_sz"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selectorpinkbutton"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Set Address"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/btn_txt_sz"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/searchlayout"
+        android:layout_above="@+id/setaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:minHeight="48dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/borderpink"
+            android:drawableLeft="@drawable/center_pin"
+            android:drawablePadding="20dp"
+            android:editable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:hint="Select address ..."
+            android:padding="15dp"
+            android:textColor="#333"
+            android:textSize="14sp"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

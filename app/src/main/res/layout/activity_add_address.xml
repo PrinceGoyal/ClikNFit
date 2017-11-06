@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BACKGROUND_COLOR"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.cliknfit.activity.AddAddress">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <com.cliknfit.customviews.SemiBoldText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:text="Enter Your Address"
+            android:textColor="@color/WHITE"/>
+
+
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/tv_myAddress"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/lightborder"
+        android:gravity="left|top"
+        android:inputType="textCapSentences"
+        android:padding="10dp"
+        android:textColor="@color/WHITE"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="@dimen/btn_txt_sz"/>
+
+
+    <com.cliknfit.customviews.RegulerText
+        android:id="@+id/save"
+        android:layout_width="180dp"
+        android:layout_height="@dimen/btn_sz"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/selectorpinkbutton"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/btn_txt_sz"
+        />
+
+
+</LinearLayout>

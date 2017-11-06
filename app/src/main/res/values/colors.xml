@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#151515</color>
+    <color name="colorPrimaryDark">#151515</color>
+    <color name="colorAccent">#484a4d</color>
+
+
+    <color name="WHITE">#FFFFFF</color>
+    <color name="TRAN_WHITE">#99FFFFFF</color>
+    <color name="BLACK">#000000</color>
+    <color name="BACKGROUND_COLOR">#151515</color>
+    <color name="BACKGROUND_COLORLIGHT">#201f1f</color>
+    <color name="BUTTON_PINK_COLOR">#c31c31</color>
+    <color name="BUTTON_ORANGE_COLOR">#dd4b39</color>
+    <color name="TEXTFIELD_PLACEHOLDER_TEXT_COLOR">#656565</color>
+    <color name="TEXTFIELD_PLACEHOLDER_TEXT_COLOR_LIGHT">#848484</color>
+    <color name="MYACCOUNTBACKGROUND">#E6E6E6</color>
+    <color name="COLOR_LIGHT">#d9d8d8</color>
+    <color name="FACEBOOK">#0069b4</color>
+    <color name="GPLUS">#dd4b39</color>
+    <color name="weightcolor">#c258a2</color>
+    <color name="bmicolor">#6f1475</color>
+    <color name="TransparentBACKGROUND_COLOR20">#73000000</color>
+    <color name="TransparentBACKGROUNDWhite_COLOR20">#73ffffff</color>
+    <color name="BACK">#555c62</color>
+    <color name="Green">#5db34a</color>
+
+    <color name="pending">#ff9d77</color>
+    <color name="complete">#15e43f</color>
+    <color name="accepted">#4b6ecc</color>
+
+
+</resources>

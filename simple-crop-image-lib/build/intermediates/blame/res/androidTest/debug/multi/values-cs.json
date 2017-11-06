@@ -1,0 +1,121 @@
+[
+    {
+        "outputFile": "/Users/prince/Documents/Grasshopper Media Office System backup/Documents/PrinceWorkSpace/ClikNFit/simple-crop-image-lib/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-cs/values-cs.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 41,
+                    "endOffset": 92
+                },
+                "from": {
+                    "file": "/Users/prince/Documents/Grasshopper Media Office System backup/Documents/PrinceWorkSpace/ClikNFit/simple-crop-image-lib/build/intermediates/bundles/debug/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 41,
+                        "endOffset": 92
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 97,
+                    "endColumn": 58,
+                    "endOffset": 151
+                },
+                "from": {
+                    "file": "/Users/prince/Documents/Grasshopper Media Office System backup/Documents/PrinceWorkSpace/ClikNFit/simple-crop-image-lib/build/intermediates/bundles/debug/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 97,
+                        "endColumn": 58,
+                        "endOffset": 151
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 156,
+                    "endColumn": 76,
+                    "endOffset": 228
+                },
+                "from": {
+                    "file": "/Users/prince/Documents/Grasshopper Media Office System backup/Documents/PrinceWorkSpace/ClikNFit/simple-crop-image-lib/build/intermediates/bundles/debug/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 156,
+                        "endColumn": 76,
+                        "endOffset": 228
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 233,
+                    "endColumn": 59,
+                    "endOffset": 288
+                },
+                "from": {
+                    "file": "/Users/prince/Documents/Grasshopper Media Office System backup/Documents/PrinceWorkSpace/ClikNFit/simple-crop-image-lib/build/intermediates/bundles/debug/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 233,
+                        "endColumn": 59,
+                        "endOffset": 288
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 293,
+                    "endColumn": 39,
+                    "endOffset": 328
+                },
+                "from": {
+                    "file": "/Users/prince/Documents/Grasshopper Media Office System backup/Documents/PrinceWorkSpace/ClikNFit/simple-crop-image-lib/build/intermediates/bundles/debug/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 293,
+                        "endColumn": 39,
+                        "endOffset": 328
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 333,
+                    "endColumn": 56,
+                    "endOffset": 385
+                },
+                "from": {
+                    "file": "/Users/prince/Documents/Grasshopper Media Office System backup/Documents/PrinceWorkSpace/ClikNFit/simple-crop-image-lib/build/intermediates/bundles/debug/res/values-cs/values-cs.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 333,
+                        "endColumn": 56,
+                        "endOffset": 385
+                    }
+                }
+            }
+        ]
+    }
+]

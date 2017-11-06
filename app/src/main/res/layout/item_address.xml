@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/row"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/round_white"
+              android:orientation="vertical"
+              android:padding="15dp">
+
+    <com.cliknfit.customviews.SemiBoldText
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Persolnal Gym"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/BUTTON_PINK_COLOR"/>
+
+
+    <com.cliknfit.customviews.LightText
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="70 Bownam hjbj klks kjbls k "
+        android:textColor="@color/BACKGROUND_COLORLIGHT"/>
+
+</LinearLayout>

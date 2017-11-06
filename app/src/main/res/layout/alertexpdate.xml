@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/round_white"
+              android:orientation="vertical">
+
+    <com.cliknfit.customviews.LightText
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="SELECT EXP DATE"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/WHITE"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:orientation="horizontal"
+        android:background="@color/BACKGROUND_COLORLIGHT"
+        android:weightSum="2"
+        >
+        <ListView
+            android:id="@+id/monthlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:dividerHeight="1dp"
+            android:layout_marginRight="5dp"
+            android:divider="@color/colorPrimary"
+            ></ListView>
+
+
+
+            <ListView
+                android:id="@+id/yearlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:dividerHeight="1dp"
+                android:layout_marginLeft="5dp"
+                android:divider="@color/colorPrimary"
+                ></ListView>
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/value"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textSize="@dimen/et_sz"
+        android:textColor="@color/WHITE"
+        android:background="@color/BACKGROUND_COLORLIGHT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/BUTTON_PINK_COLOR"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/WHITE"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/tv_done"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1px"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Done"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/WHITE"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

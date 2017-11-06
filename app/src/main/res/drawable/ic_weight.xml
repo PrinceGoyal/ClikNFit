@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="18dp"
+        android:height="18dp"
+        android:viewportHeight="120.0"
+        android:viewportWidth="120.0">
+    <path
+        android:fillColor="@color/BUTTON_PINK_COLOR"
+        android:pathData="M13.5,2.4c-6,2.8 -8.7,5.6 -11.4,11.6 -2,4.3 -2.1,6.4 -2.1,45.4 0,28.2 0.4,42.1 1.2,44.7 1.5,5.2 6.8,11.3 12.1,13.8 4.2,2 5.8,2.1 46.8,2.1 47.3,0 46.8,0 53.6,-7.1 6.3,-6.7 6.3,-6.5 6.3,-53.1 0,-40.7 -0.1,-42.3 -2.1,-46.5 -2.5,-5.3 -8.6,-10.6 -13.8,-12.1 -2.6,-0.8 -16.6,-1.2 -44.7,-1.2 -40.9,0 -40.9,0 -45.9,2.4zM79.2,17.4c9.4,3.5 21.8,11.9 21.8,14.8 0,0.6 -4.1,6.2 -9.1,12.4l-9.1,11.4 -22.7,0 -22.7,0 -9.3,-11.6c-5.1,-6.3 -9,-12.1 -8.8,-12.8 1.5,-3.9 16.7,-13.2 25.2,-15.5 6.7,-1.8 8.7,-2 18.6,-1.6 7,0.3 11.3,1.1 16.1,2.9z"
+        android:strokeColor="@color/BUTTON_PINK_COLOR"/>
+    <path
+        android:fillColor="@color/BUTTON_PINK_COLOR"
+        android:pathData="M68.7,38l-8.6,13 5.9,0c4.7,0 6,-0.3 6.4,-1.8 1.4,-4.7 5.6,-23.5 5.3,-23.9 -0.2,-0.2 -4.3,5.5 -9,12.7z"
+        android:strokeColor="@color/BUTTON_PINK_COLOR"/>
+</vector>

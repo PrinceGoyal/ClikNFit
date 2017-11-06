@@ -1,0 +1,358 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/BACKGROUND_COLORLIGHT"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+
+            <com.cliknfit.customviews.SemiBoldText
+                android:id="@+id/tv_sessionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="SESSION TITLE"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_sz"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                >
+
+                <com.cliknfit.customviews.RegulerText
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Trainer"
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"/>
+
+                <com.cliknfit.customviews.LightText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="|  "
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"
+                    />
+
+                <com.cliknfit.customviews.SemiBoldText
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/COLOR_LIGHT"
+                    android:textSize="@dimen/et_szSmall"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                >
+
+                <com.cliknfit.customviews.RegulerText
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hours"
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"/>
+
+                <com.cliknfit.customviews.LightText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="|  "
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"
+                    />
+
+                <com.cliknfit.customviews.SemiBoldText
+                    android:id="@+id/tv_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/COLOR_LIGHT"
+                    android:textSize="@dimen/et_szSmall"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                >
+
+                <com.cliknfit.customviews.RegulerText
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total Charged "
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"/>
+
+                <com.cliknfit.customviews.LightText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="|  "
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                    android:textSize="@dimen/btn_txt_sz"
+                    />
+
+                <com.cliknfit.customviews.SemiBoldText
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/COLOR_LIGHT"
+                    android:textSize="@dimen/et_szSmall"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_addmorehour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_add_button_inside_black_circle"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical"
+                        >
+
+                        <com.cliknfit.customviews.LightText
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Not done yet?"
+                            android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"/>
+
+                        <com.cliknfit.customviews.RegulerText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="ADD MORE HOURS "
+                            android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical"
+                        >
+
+                        <EditText
+                            android:id="@+id/selecthour"
+                            android:focusable="false"
+                            android:editable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:textColor="@color/WHITE"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <com.cliknfit.customviews.RegulerText
+                    android:id="@+id/requestmosthour"
+                    android:layout_width="180dp"
+                    android:layout_height="@dimen/btn_sz"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/selectorpinkbutton"
+                    android:gravity="center"
+                    android:text="Request More Hours"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/btn_txt_sz"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+
+            <com.cliknfit.customviews.SemiBoldText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Rate your experience"
+                android:textAllCaps="true"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_sz"
+                android:textStyle="bold"/>
+
+
+<!--
+            <RatingBar
+                android:id="@+id/ratingBar1"
+                style="@style/customRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="2.0"
+                android:padding="5dp"
+                />-->
+
+           <!-- style="@style/customRatingBar"-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/onestar"
+                    android:src="@drawable/empty_star"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/twostar"
+                    android:src="@drawable/empty_star"
+                    android:layout_margin="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/threestar"
+                    android:src="@drawable/empty_star"
+                    android:layout_margin="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/fourstar"
+                    android:src="@drawable/empty_star"
+                    android:layout_margin="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/fivestar"
+                    android:src="@drawable/empty_star"
+                    android:layout_margin="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+
+            <EditText
+                android:id="@+id/tv_review"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/lightborder"
+                android:gravity="left|top"
+                android:hint="Leave your review here..."
+                android:padding="10dp"
+                android:textColor="@color/WHITE"
+                android:textColorHint="@color/WHITE"
+                android:textSize="@dimen/btn_txt_sz"/>
+
+
+            <com.cliknfit.customviews.SemiBoldText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Training recap"
+                android:visibility="gone"
+                android:textAllCaps="true"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_sz"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/tv_notes"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lightborder"
+                android:gravity="left|top"
+                android:hint="Leave your notes here..."
+                android:padding="10dp"
+                android:textColor="@color/WHITE"
+                android:textColorHint="@color/WHITE"
+                android:textSize="@dimen/btn_txt_sz"/>
+
+            <com.cliknfit.customviews.RegulerText
+                android:id="@+id/complete"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_sz"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/selectorpinkbutton"
+                android:gravity="center"
+                android:text="Training Completed"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/btn_txt_sz"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

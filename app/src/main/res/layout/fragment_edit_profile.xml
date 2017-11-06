@@ -1,0 +1,1032 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/BACKGROUND_COLORLIGHT"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.8">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/img_profile_pic"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/placeholder"
+                        app:riv_border_color="#fff"
+                        app:riv_border_width="2dip"
+                        app:riv_corner_radius="5dp"
+                        app:riv_mutate_background="true"
+                        />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:orientation="vertical"
+                    >
+
+                    <EditText
+                        android:id="@+id/tv_Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:textColor="@color/WHITE"
+                        android:textColorHint="@color/colorAccent"
+                        android:textSize="@dimen/et_szmedium"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorAccent"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <com.cliknfit.customviews.LightText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Age           |  "
+                            android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                            android:textSize="@dimen/btn_txt_sz"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <EditText
+                                android:id="@+id/speciality"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:clickable="false"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:textColor="@color/COLOR_LIGHT"
+                                android:textColorHint="@color/colorAccent"
+                                android:textSize="@dimen/btn_txt_sz"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@color/colorAccent"
+                                />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <com.cliknfit.customviews.LightText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="City           |  "
+                            android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR"
+                            android:textSize="@dimen/btn_txt_sz"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <EditText
+                                android:id="@+id/tv_city"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:inputType="textCapSentences"
+                                android:textColor="@color/COLOR_LIGHT"
+                                android:textSize="@dimen/btn_txt_sz"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@color/colorAccent"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="2.1"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/lightborder"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <com.cliknfit.customviews.SemiBoldText
+                            android:id="@+id/tv_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="9"
+                            android:textColor="@color/COLOR_LIGHT"
+                            android:textSize="@dimen/et_szSmall"
+                            android:textStyle="bold"/>
+
+                        <com.cliknfit.customviews.LightText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="rating"
+                            android:textColor="@color/COLOR_LIGHT"
+                            android:textSize="@dimen/et_szSmall"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/lightborder"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        >
+
+                        <com.cliknfit.customviews.SemiBoldText
+                            android:id="@+id/tv_points"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:textColor="@color/COLOR_LIGHT"
+                            android:textSize="@dimen/et_szSmall"
+                            android:textStyle="bold"/>
+
+                        <com.cliknfit.customviews.LightText
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="points"
+                            android:textColor="@color/COLOR_LIGHT"
+                            android:textSize="@dimen/et_szSmall"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:orientation="vertical"
+                >
+
+                <EditText
+                    android:id="@+id/et_currentWait"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="#00000000"
+                    android:drawableLeft="@drawable/ic_weight"
+                    android:drawablePadding="10dp"
+                    android:hint="Current Weight"
+                    android:maxLength="4"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="@dimen/et_szSmall"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/colorAccent"
+                    />
+
+                <EditText
+                    android:id="@+id/et_targetWait"
+                    android:layout_width="match_parent"
+                    android:maxLength="4"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:background="#00000000"
+                    android:drawableLeft="@drawable/ic_target"
+                    android:drawablePadding="10dp"
+                    android:hint="Target Weight"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="@dimen/et_szSmall"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/colorAccent"
+                    />
+
+                <EditText
+                    android:id="@+id/et_bmi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:background="#00000000"
+                    android:maxLength="4"
+                    android:drawableLeft="@drawable/ic_muscule"
+                    android:drawablePadding="10dp"
+                    android:hint="BMI"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="@dimen/et_szSmall"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/colorAccent"
+                    />
+
+                <EditText
+                    android:id="@+id/et_bodyFat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:background="#00000000"
+                    android:drawableLeft="@drawable/ic_body_fat"
+                    android:drawablePadding="10dp"
+                    android:hint="Body Fat"
+                    android:maxLength="4"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="@dimen/et_szSmall"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/colorAccent"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                >
+
+                <com.cliknfit.customviews.RegulerText
+                    android:id="@+id/upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:drawableLeft="@drawable/ic_upload"
+                    android:drawablePadding="3dp"
+                    android:text="Upload Photo"
+                    android:textColor="@color/WHITE"
+                    android:textSize="@dimen/et_sz"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/select_multiple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/multiple"/>
+
+                    <ImageView
+                        android:id="@+id/select_deselect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/select_multiple"
+                        android:src="@drawable/uncheck"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/select_deselect"
+                        android:src="@drawable/delete_icon"
+                        android:visibility="gone"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/capture1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/addimage_icon"
+                            android:scaleType="centerCrop"
+                            app:riv_corner_radius="5dp"
+                            app:riv_mutate_background="true"
+                            />
+
+                        <ImageView
+                            android:id="@+id/select1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/select"
+                            android:visibility="gone"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/capture2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/addimage_icon"
+                            android:scaleType="centerCrop"
+                            app:riv_corner_radius="5dp"
+                            app:riv_mutate_background="true"
+                            />
+
+                        <ImageView
+                            android:id="@+id/select2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/select"
+                            android:visibility="gone"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/capture3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/addimage_icon"
+                            android:scaleType="centerCrop"
+                            app:riv_corner_radius="5dp"
+                            app:riv_mutate_background="true"
+                            />
+
+                        <ImageView
+                            android:id="@+id/select3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/select"
+                            android:visibility="gone"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/capture4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/addimage_icon"
+                            android:scaleType="centerCrop"
+                            app:riv_corner_radius="5dp"
+                            app:riv_mutate_background="true"
+                            />
+
+                        <ImageView
+                            android:id="@+id/select4"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/select"
+                            android:visibility="gone"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/capture5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/addimage_icon"
+                            android:scaleType="centerCrop"
+                            app:riv_corner_radius="5dp"
+                            app:riv_mutate_background="true"
+                            />
+
+                        <ImageView
+                            android:id="@+id/select5"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/select"
+                            android:visibility="gone"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/capture6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/addimage_icon"
+                            android:scaleType="centerCrop"
+                            app:riv_corner_radius="5dp"
+                            app:riv_mutate_background="true"
+                            />
+
+                        <ImageView
+                            android:id="@+id/select6"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/select"
+                            android:visibility="gone"/>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/capture7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/addimage_icon"
+                            android:scaleType="centerCrop"
+                            app:riv_corner_radius="5dp"
+                            app:riv_mutate_background="true"
+                            />
+
+                        <ImageView
+                            android:id="@+id/select7"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/select"
+                            android:visibility="gone"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/capture8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/addimage_icon"
+                            android:scaleType="centerCrop"
+                            app:riv_corner_radius="5dp"
+                            app:riv_mutate_background="true"
+                            />
+
+                        <ImageView
+                            android:id="@+id/select8"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/select"
+                            android:visibility="gone"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/capture9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/addimage_icon"
+                            android:scaleType="centerCrop"
+                            app:riv_corner_radius="5dp"
+                            app:riv_mutate_background="true"
+                            />
+
+                        <ImageView
+                            android:id="@+id/select9"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/select"
+                            android:visibility="gone"/>
+                    </FrameLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="-10dp"
+                android:background="@color/BACKGROUND_COLOR">
+
+                <com.cliknfit.customviews.RegulerText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="PROFILE INFORMATION"
+                    android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR_LIGHT"/>
+
+            </RelativeLayout>
+
+
+            <com.cliknfit.customviews.SemiBoldText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_right_arrow"
+                android:drawablePadding="10dp"
+                android:text="About Me"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_sz"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/tv_aboutUs"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lightborder"
+                android:gravity="left|top"
+                android:hint="Enter detail information about yourself"
+                android:inputType="textCapSentences"
+                android:padding="10dp"
+                android:textColor="@color/WHITE"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="@dimen/btn_txt_sz"/>
+
+            <com.cliknfit.customviews.SemiBoldText
+                android:id="@+id/semiBoldText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:drawableLeft="@drawable/ic_right_arrow"
+                android:drawablePadding="10dp"
+                android:text="Health condition/problems"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_sz"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2"
+
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_healthConditionProblem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_healthConditionProblem2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="7dp">
+
+                <com.cliknfit.customviews.SemiBoldText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:text="Other"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/WHITE"
+                    android:textSize="@dimen/et_sz"
+                    android:textStyle="bold"/>
+
+
+                <EditText
+                    android:id="@+id/other_health"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/WHITE"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:background="@drawable/lightborder"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="35dp"/>
+
+            </LinearLayout>
+
+
+            <com.cliknfit.customviews.SemiBoldText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:drawableLeft="@drawable/ic_right_arrow"
+                android:drawablePadding="10dp"
+                android:text="Workout Interest"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_sz"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_workOutInterest1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_workOutInterest2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="7dp">
+
+                <com.cliknfit.customviews.SemiBoldText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:text="Other"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/WHITE"
+                    android:textSize="@dimen/et_sz"
+                    android:textStyle="bold"/>
+
+
+                <EditText
+                    android:id="@+id/other_workoutinterest"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/WHITE"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:background="@drawable/lightborder"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="35dp"/>
+
+            </LinearLayout>
+
+
+            <com.cliknfit.customviews.SemiBoldText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:drawableLeft="@drawable/ic_right_arrow"
+                android:drawablePadding="10dp"
+                android:text="Workout Location Preference"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_sz"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_workOutLocationpreference1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_workOutLocationpreference2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="7dp">
+
+                <com.cliknfit.customviews.SemiBoldText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:text="Other"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/WHITE"
+                    android:textSize="@dimen/et_sz"
+                    android:textStyle="bold"/>
+
+
+                <EditText
+                    android:id="@+id/other_workout_location"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/lightborder"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/WHITE"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="35dp"/>
+
+            </LinearLayout>
+
+            <com.cliknfit.customviews.SemiBoldText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:drawableLeft="@drawable/ic_right_arrow"
+                android:drawablePadding="10dp"
+                android:text="Additional Info"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_sz"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/tv_additionalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lightborder"
+                android:gravity="left|top"
+                android:hint="Enter any additional informations usefull to clients"
+                android:inputType="textCapSentences"
+                android:padding="10dp"
+                android:textColor="@color/WHITE"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="@dimen/btn_txt_sz"/>
+
+
+            <com.cliknfit.customviews.SemiBoldText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:drawableLeft="@drawable/ic_right_arrow"
+                android:drawablePadding="10dp"
+                android:text="My Address"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_sz"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/tv_myAddress"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lightborder"
+                android:gravity="left|top"
+                android:inputType="textCapSentences"
+                android:padding="10dp"
+                android:textColor="@color/WHITE"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="@dimen/btn_txt_sz"
+                android:visibility="gone"/>
+
+
+            <com.cliknfit.customviews.RegulerText
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_sz"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selectorpinkbutton"
+                android:gravity="center"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/btn_txt_sz"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/fullimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BACKGROUND_COLOR"
+        android:visibility="gone"/>
+</RelativeLayout>

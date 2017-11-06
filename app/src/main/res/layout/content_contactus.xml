@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        card_view:cardBackgroundColor="@color/BACKGROUND_COLORLIGHT"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/cliknfit_logo_in_white"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:src="@drawable/drawerlogo"/>
+
+            <LinearLayout
+                android:id="@+id/ll_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp"
+                android:padding="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/map_icon"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="vertical"
+                    >
+
+                    <com.cliknfit.customviews.LightText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WEBSITE"
+                        android:textAllCaps="true"
+                        android:textColor="@color/WHITE"
+                        android:textSize="@dimen/et_sz"/>
+
+                    <com.cliknfit.customviews.LightText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="www.cliknfit.com"
+                        android:textAllCaps="false"
+                        android:textColor="@color/BUTTON_PINK_COLOR"
+                        android:textSize="@dimen/et_szSmall"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/COLOR_LIGHT"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/email_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="vertical"
+                    >
+
+                    <com.cliknfit.customviews.LightText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="email address"
+                        android:textAllCaps="true"
+                        android:textColor="@color/WHITE"
+                        android:textSize="@dimen/et_sz"/>
+
+                    <com.cliknfit.customviews.LightText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="info@cliknfit.com"
+                        android:textAllCaps="false"
+                        android:textColor="@color/BUTTON_PINK_COLOR"
+                        android:textSize="@dimen/et_szSmall"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/COLOR_LIGHT"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/phone_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="vertical"
+                    >
+
+                    <com.cliknfit.customviews.LightText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="phone number"
+                        android:textAllCaps="true"
+                        android:textColor="@color/WHITE"
+                        android:textSize="@dimen/et_sz"/>
+
+                    <com.cliknfit.customviews.LightText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(833) CLIKNFIT"
+                        android:textAllCaps="false"
+                        android:textColor="@color/BUTTON_PINK_COLOR"
+                        android:textSize="@dimen/et_szSmall"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

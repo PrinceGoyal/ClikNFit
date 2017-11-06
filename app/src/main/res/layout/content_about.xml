@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/colorPrimary"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/cliknfit_logo_in_white"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:src="@drawable/drawerlogo"/>
+
+
+
+    <com.cliknfit.customviews.RegulerText
+        android:id="@+id/txt_aboutus"
+        android:textColor="@color/WHITE"
+        android:textSize="@dimen/et_sz"
+        android:layout_margin="20dp"
+        android:text="jbjkh bkjbs lbkls l ,sblk lbs l  ,jlbs l l ,sl jblsl lklsn l ,snl  ln,s lnjks lbls lb,s lblj sljb,s ljbjs ljbs ,bj ljbljbs lblbjlb ljbln;sa lihoiwp uiegwiuegw ewewohlnfec onnas,mb iokbkas iyvjghvbas baskl klblbas klbjasc kljblbsa lblbasc."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

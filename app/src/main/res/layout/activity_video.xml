@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/BLACK">
+
+    <!--<VideoView
+        android:id="@+id/info_video"
+        android:foregroundGravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       >
+    </VideoView>-->
+
+    <!--    <TextureView
+            android:id="@+id/textureView"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"/>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BLACK"
+        android:layout_centerInParent="true"
+        >
+        <VideoView
+            android:id="@+id/info_video"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </VideoView>
+
+
+    </FrameLayout>
+
+
+    <com.cliknfit.customviews.RegulerText
+        android:id="@+id/skip"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="160dp"
+        android:layout_height="@dimen/btn_sz"
+        android:background="@drawable/selectorpinkbutton"
+        android:gravity="center"
+        android:text="Skip"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/cliknfit_logo_in_white"/>
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logo"
+        android:src="@drawable/cliknfit_get_fit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"/>
+
+</RelativeLayout>

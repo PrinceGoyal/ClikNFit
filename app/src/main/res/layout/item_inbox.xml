@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/BACKGROUND_COLOR"
+                android:id="@+id/row"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp">
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_profile_pic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/lightborder"
+            android:scaleType="fitCenter"
+            android:src="@drawable/user_image_temp"
+            app:riv_border_color="#fff"
+            app:riv_border_width="2dip"
+            app:riv_corner_radius="5dp"
+            app:riv_mutate_background="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            >
+
+            <com.cliknfit.customviews.SemiBoldText
+                android:id="@+id/tv_clientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Client Name"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_szmedium"/>
+
+
+            <com.cliknfit.customviews.LightText
+                android:id="@+id/tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="15dp"
+                android:text="JULY 28,2016 Tuesday"
+                android:textColor="@color/WHITE"
+                android:textSize="@dimen/et_sz"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.cliknfit.customviews.LightText
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="JULY"
+        android:textColor="@color/TEXTFIELD_PLACEHOLDER_TEXT_COLOR_LIGHT"
+        android:textSize="@dimen/et_szSmall"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lay"
+        android:layout_marginTop="15dp"
+        android:background="@color/WHITE"
+        />
+</RelativeLayout>
