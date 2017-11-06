@@ -80,9 +80,9 @@ public class Login extends AppCompatActivity implements ApiResponse, GoogleApiCl
     TextView forgotpassword;
 
     private static final int PERMISSION_ALL = 12;
-    private static final String[] PERMISSIONS = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA,
+   /* private static final String[] PERMISSIONS = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA,
             Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.READ_PHONE_STATE, Manifest.permission.CALL_PHONE,
-            Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION};
+            Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION};*/
     private GoogleApiClient mGoogleApiClient;
     private Context context;
     public static Location mLastLocation;
@@ -106,17 +106,6 @@ public class Login extends AppCompatActivity implements ApiResponse, GoogleApiCl
         setgoogleapi();
         initViews();
 
-    }
-
-    public static boolean hasPermissions(Context context, String... permissions) {
-        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && context != null && permissions != null) {
-            for (String permission : permissions) {
-                if (ActivityCompat.checkSelfPermission(context, permission) != PackageManager.PERMISSION_GRANTED) {
-                    return false;
-                }
-            }
-        }
-        return true;
     }
 
     @Override
@@ -227,7 +216,7 @@ public class Login extends AppCompatActivity implements ApiResponse, GoogleApiCl
         signup = (TextView) findViewById(R.id.signup);
         forgotpassword = (TextView) findViewById(R.id.forgotpassword);
 
-
+ //all click listners
         click();
     }
 
