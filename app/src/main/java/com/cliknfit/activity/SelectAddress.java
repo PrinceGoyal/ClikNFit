@@ -93,14 +93,12 @@ public class SelectAddress extends AppCompatActivity implements OnMapReadyCallba
     }
 
 
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.home:
+            case android.R.id.home:
                 finish();
                 super.onBackPressed();
-
                 break;
             case R.id.search:
                 try {
@@ -122,7 +120,7 @@ public class SelectAddress extends AppCompatActivity implements OnMapReadyCallba
             default:
                 return super.onOptionsItemSelected(item);
         }
-        return true;
+        return super.onOptionsItemSelected(item);
     }
 
     private void initViews() {
@@ -264,7 +262,7 @@ public class SelectAddress extends AppCompatActivity implements OnMapReadyCallba
 
                     LatLng lastloc = new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude());
 
-                    moveToLocation(mLastLocation.getLatitude(), mLastLocation.getLongitude(),15);
+                    moveToLocation(mLastLocation.getLatitude(), mLastLocation.getLongitude(), 15);
 
 
                 } else {
@@ -328,7 +326,7 @@ public class SelectAddress extends AppCompatActivity implements OnMapReadyCallba
             return;
         }
         mMap.setMyLocationEnabled(true);
-       mMap.getUiSettings().setMyLocationButtonEnabled(false);
+        mMap.getUiSettings().setMyLocationButtonEnabled(false);
         mMap.getUiSettings().setRotateGesturesEnabled(true);
 
 
