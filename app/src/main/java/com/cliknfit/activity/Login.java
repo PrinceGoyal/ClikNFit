@@ -80,9 +80,9 @@ public class Login extends AppCompatActivity implements ApiResponse, GoogleApiCl
     TextView forgotpassword;
 
     private static final int PERMISSION_ALL = 12;
-   /* private static final String[] PERMISSIONS = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA,
-            Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.READ_PHONE_STATE, Manifest.permission.CALL_PHONE,
-            Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION};*/
+     private static final String[] PERMISSIONS = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA,
+             Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.READ_PHONE_STATE, Manifest.permission.CALL_PHONE,
+             Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION};
     private GoogleApiClient mGoogleApiClient;
     private Context context;
     public static Location mLastLocation;
@@ -94,9 +94,9 @@ public class Login extends AppCompatActivity implements ApiResponse, GoogleApiCl
     private int SOCIALCALLBACKFACEBOOK = 12365;
     private int SOCIALCALLBACKGOOGLE = 65123;
     private String name;
-    private String profilePic="";
-    private static int PERMISSION_ACCESS_COARSE_LOCATION=56;
-    private int homecount=0;
+    private String profilePic = "";
+    private static int PERMISSION_ACCESS_COARSE_LOCATION = 56;
+    private int homecount = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,7 +117,6 @@ public class Login extends AppCompatActivity implements ApiResponse, GoogleApiCl
                 break;
         }
     }
-
 
 
     @Override
@@ -216,7 +215,7 @@ public class Login extends AppCompatActivity implements ApiResponse, GoogleApiCl
         signup = (TextView) findViewById(R.id.signup);
         forgotpassword = (TextView) findViewById(R.id.forgotpassword);
 
- //all click listners
+        //all click listners
         click();
     }
 
@@ -318,7 +317,7 @@ public class Login extends AppCompatActivity implements ApiResponse, GoogleApiCl
         ca.logintask(email.getText().toString(),
                 password.getText().toString(),
                 loginType,
-                fbId, gPlusId, devideId, refreshedToken, device_type, lati, longti,"login"
+                fbId, gPlusId, devideId, refreshedToken, device_type, lati, longti, "login"
         );
     }
 
@@ -344,12 +343,12 @@ public class Login extends AppCompatActivity implements ApiResponse, GoogleApiCl
             } else {
                 AppPreference.setPreference(Login.this, Constants.AGREE, "1");
                 AppPreference.setPreference(Login.this, Constants.STATUS, "1");
-                AppPreference.setPreference(context, Constants.FBID,fbId);
-                AppPreference.setPreference(context, Constants.GPLUSID,gPlusId);
-                AppPreference.setPreference(context, Constants.DEVICEID,devideId);
-                AppPreference.setPreference(context, Constants.DEVICETYPE,device_type);
-                AppPreference.setPreference(context, Constants.PASSWORD,password.getText().toString());
-                AppPreference.setPreference(context, Constants.LOGINTYPE,loginType);
+                AppPreference.setPreference(context, Constants.FBID, fbId);
+                AppPreference.setPreference(context, Constants.GPLUSID, gPlusId);
+                AppPreference.setPreference(context, Constants.DEVICEID, devideId);
+                AppPreference.setPreference(context, Constants.DEVICETYPE, device_type);
+                AppPreference.setPreference(context, Constants.PASSWORD, password.getText().toString());
+                AppPreference.setPreference(context, Constants.LOGINTYPE, loginType);
                 startActivity(new Intent(context, Dashboard.class)
                         .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
             }
@@ -368,16 +367,16 @@ public class Login extends AppCompatActivity implements ApiResponse, GoogleApiCl
                         UserModel userModel = dataModel.getUser();
                         AppPreference.setUser(context, userModel);
                         AppPreference.setPreference(context, Constants.USERID, String.valueOf(userModel.getId()));
-                        AppPreference.setPreference(context, Constants.FBID,fbId);
-                        AppPreference.setPreference(context, Constants.GPLUSID,gPlusId);
-                        AppPreference.setPreference(context, Constants.DEVICEID,devideId);
-                        AppPreference.setPreference(context, Constants.DEVICETYPE,device_type);
-                        AppPreference.setPreference(context, Constants.PASSWORD,password.getText().toString());
-                        AppPreference.setPreference(context, Constants.LOGINTYPE,loginType);
+                        AppPreference.setPreference(context, Constants.FBID, fbId);
+                        AppPreference.setPreference(context, Constants.GPLUSID, gPlusId);
+                        AppPreference.setPreference(context, Constants.DEVICEID, devideId);
+                        AppPreference.setPreference(context, Constants.DEVICETYPE, device_type);
+                        AppPreference.setPreference(context, Constants.PASSWORD, password.getText().toString());
+                        AppPreference.setPreference(context, Constants.LOGINTYPE, loginType);
 
                         if (dataModel.isStatus()) {
                             AppPreference.setPreference(Login.this, Constants.AGREE, "1");
-                            AppPreference.setPreference(Login.this,Constants.STATUS, "1");
+                            AppPreference.setPreference(Login.this, Constants.STATUS, "1");
 
                             startActivity(new Intent(context, Dashboard.class)
                                     .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
@@ -407,7 +406,6 @@ public class Login extends AppCompatActivity implements ApiResponse, GoogleApiCl
         }
 
     }
-
 
 
 }
